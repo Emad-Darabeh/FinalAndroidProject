@@ -27,12 +27,12 @@ public class SignInSignUpActivity extends AppCompatActivity {
         });
         signUpBtn = findViewById(R.id.sign_up_button);
 
-    //    signUpBtn.setOnClickListener(new View.OnClickListener() {
-    //        @Override
-     //       public void onClick(View view) {
-    //            Intent intent = new Intent(SignInSignUpActivity.this, SignUpActivity.class);
-    //            startActivity(intent);
-    //        }
-    //    });
+        signUpBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SignInSignUpActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

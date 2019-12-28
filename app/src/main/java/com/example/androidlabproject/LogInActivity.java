@@ -70,13 +70,13 @@ public class LogInActivity extends AppCompatActivity {
         });
 
         signUpTV = findViewById(R.id.sign_up_text_view);
-    //    signUpTV.setOnClickListener(new View.OnClickListener() {
-    //        @Override
-    //        public void onClick(View view) {
-    //            Intent intent = new Intent(LogInActivity.this, SignUpActivity.class);
-    //            LogInActivity.this.startActivity(intent);
-    //        }
-    //    });
+        signUpTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LogInActivity.this, SignUpActivity.class);
+                LogInActivity.this.startActivity(intent);
+            }
+        });
 
         closeIcon = findViewById(R.id.close_icon);
         closeIcon.setOnClickListener(new View.OnClickListener() {
