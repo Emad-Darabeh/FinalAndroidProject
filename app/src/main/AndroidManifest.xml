@@ -21,6 +21,9 @@
         <activity android:name=".WelcomeActivity2" />
         <activity android:name=".SignInSignUpActivity" />
         <activity android:name=".LogInActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".AddNoteActivity"/>
+        <activity android:name=".NotesActivity" />
     </application>
 
 </manifest>
