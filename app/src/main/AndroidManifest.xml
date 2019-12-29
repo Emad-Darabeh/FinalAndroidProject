@@ -24,6 +24,9 @@
         <activity android:name=".ForgotPasswordActivity" />
         <activity android:name=".AddNoteActivity"/>
         <activity android:name=".NotesActivity" />
+        <activity android:name=".AddNotebookActivity" />
+        <activity android:name=".CheckEmailActivity" />
+        <activity android:name=".NotesActivity" />
     </application>
 
 </manifest>

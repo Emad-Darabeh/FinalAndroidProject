@@ -37,22 +37,22 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         addNotebookIV = findViewById(R.id.add_notebook_image_view);
-//        addNotebookIV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(HomePage.this, AddNotebookActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        addNotebookIV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePage.this, AddNotebookActivity.class);
+                startActivity(intent);
+            }
+        });
 
         showNotebooksTV = findViewById(R.id.show_notebooks_text_view);
-//        showNotebooksTV.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(HomePage.this, NotebooksActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        showNotebooksTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomePage.this, NotebooksActivity.class);
+                startActivity(intent);
+            }
+        });
 
         showNotesTV = findViewById(R.id.show_notes_text_view);
         showNotesTV.setOnClickListener(new View.OnClickListener() {

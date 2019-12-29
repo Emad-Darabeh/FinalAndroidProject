@@ -74,11 +74,11 @@ public class AddNoteActivity extends AppCompatActivity {
                 Note newNote;
 
                 if (notebookId == null) {
-//                    String autoNotebookId = FirebaseDatabase.getInstance().getReference().child("Notebook").push().getKey();
-//                    Notebook newNotebook = new Notebook("auto created", formattedDate, autoNotebookId, userId);
-//                    FirebaseDatabase.getInstance().getReference().child("Notebook").child(autoNotebookId).setValue(newNotebook);
+                    String autoNotebookId = FirebaseDatabase.getInstance().getReference().child("Notebook").push().getKey();
+                    Notebook newNotebook = new Notebook("auto created", formattedDate, autoNotebookId, userId);
+                    FirebaseDatabase.getInstance().getReference().child("Notebook").child(autoNotebookId).setValue(newNotebook);
 
-                    newNote = new Note(noteTitle, formattedDate, noteBody, "autoNotebookId", userId);
+                    newNote = new Note(noteTitle, formattedDate, noteBody, autoNotebookId, userId);
                 } else {
                     newNote = new Note(noteTitle, formattedDate, noteBody, notebookId, userId);
                 }
