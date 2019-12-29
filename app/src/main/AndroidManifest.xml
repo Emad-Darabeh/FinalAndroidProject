@@ -26,7 +26,7 @@
         <activity android:name=".NotesActivity" />
         <activity android:name=".AddNotebookActivity" />
         <activity android:name=".CheckEmailActivity" />
-        <activity android:name=".NotesActivity" />
+        <activity android:name=".NotebooksActivity" />
     </application>
 
 </manifest>
